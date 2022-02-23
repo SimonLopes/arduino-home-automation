@@ -22,7 +22,7 @@
 ESP8266WiFiMulti WiFiMulti;
 #define USE_SERIAL Serial
 SocketIOclient socketIO;
-ESP8266WebServer server(80);
+ESP8266WebServer server(80); // porta do servidor de configuracao
 
 // Constantes e variaveis ========================================
 
@@ -48,7 +48,7 @@ byte DNS_PORT = 53;
 DNSServer dnsServer;
 
  //Dados Socket
-String DOMAIN = "homefuture.herokuapp.com";
+String DOMAIN = "<DOMAIN_FOR_SERVER_SIDE_SOCKET_IO>";
 int PORT = 443;
 
 const char index_html[] PROGMEM = R"rawliteral(
